@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+		<link href="http://fonts.googleapis.com/css?family=Quicksand:400,700,300|Titillium+Web:400,200,300,600,700,900,200italic,300italic,400italic,600italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 		
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
