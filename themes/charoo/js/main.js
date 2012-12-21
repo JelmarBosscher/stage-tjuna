@@ -14,7 +14,9 @@ $(document).ready(function() {
 	
 	$('.post-cover').click(function() {
 		$(this).toggleClass('activeShow')
-	
+	});
+	$('div.image').click(function() {
+		$(this).toggleClass('activeShow')
 	});
 	
 	
