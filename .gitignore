@@ -11,7 +11,7 @@ Thumbs.db
 
 # ignore debug and custom themes
 /themes/*
-!/themes/default
+!/themes/charoo
 
 # ignore phpunit tests
 /tests
