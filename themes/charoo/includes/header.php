@@ -58,11 +58,11 @@
 		
 		
 			<hgroup>
-				<a href="<?php echo base_url(); ?>">
-					<h1 id="logo"><?php echo site_name(); ?></h1>
-					<h2 id="description"><?php echo site_description(); ?></h2>
+				<a class="logoLink" href="<?php echo base_url(); ?>">
+					<h1 id="logo"><?php echo site_name(); ?></h1>					
 				</a>
 				<div class="glyphs">
+					<h2 id="description"><?php echo site_description(); ?></h2>				
 					<a href="http://twitter.com/jelmarbosscher" class="twitter" data-icon="&#x54;"></a>
 					<a href="http://github.com/jelmarbosscher" class="github" data-icon="&#x47;"></a>
 					<a href="mailto:hello@jelmarbosscher.nl" class="email" data-icon="&#x45;"></a>

@@ -11,13 +11,16 @@
 						<?php if(article_custom_fields()): ?>
 							<div class="post-thumb">								
 							    <img src="<?php echo article_custom_field('cover', 'stage image'); ?>" >
+							    <span class="showInd"></span>
 							</div>
 						<?php endif; ?>
 					
 						<h1><?php echo article_title(); ?></h1>
 							<?php echo article_description(); ?>
-
+						
+						
 					</article>
+					
 				</a>
 			<?php endwhile; ?>
 
