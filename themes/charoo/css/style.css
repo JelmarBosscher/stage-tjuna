@@ -132,11 +132,11 @@ header#main-header nav {
 			border-bottom: 20px solid #faf9f4;
 			border-left: 20px solid #faf9f4;
 			padding: 0px 16px;
-			-webkit-transition: all .1s linear;
-			-moz-transition: all .1s linear;
-			-o-transition: all .1s linear;
-			-ms-transition: all .1s linear;
-			transition: all .1s linear;
+			-webkit-transition: all .05s linear;
+			-moz-transition: all .05s linear;
+			-o-transition: all .05s linear;
+			-ms-transition: all .05s linear;
+			transition: all .05s linear;
 		}
 		header#main-header nav li.active a {
 			color: #fff;
@@ -304,7 +304,7 @@ section#content.article-home > a:hover{
 	font-size: 16px;
 	width: 100%;
 	line-height: 0;
-	padding: 100px 0;
+	height: 100%;
 }
 
 section#content article > a { text-decoration: none; }
@@ -342,7 +342,7 @@ section#content.section-post div.image{
 	margin-bottom: 20px;
 }
 section#content.section-post div.image, section#content.section-post .post-cover{
-	height: 300px;
+	height: 250px;
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -365,7 +365,7 @@ section#content.section-post div.image:hover span.greyOut, section#content.secti
 	}
 
 section#content.section-post div.image.activeShow, section#content.section-post .post-cover.activeShow{
-	height: 300px;
+	height: 250px;
 	box-shadow: 0px 1px 15px #000;
 	z-index: 6666;
 	overflow: visible;
@@ -485,6 +485,7 @@ a.email:hover { color: #333; }
 		height: auto;
 		width: 100%;
 		min-width: 90%;
+		padding-left: 0;
 	}
 	header#main-header hgroup {
 		margin-left: 5%;
@@ -492,6 +493,7 @@ a.email:hover { color: #333; }
 	header#main-header nav { margin: 0 0 20px; }
 	header#main-header nav li{	display: block; height: 40px;
 	}
+	
 	
 	header#date-time { display: none; }
 	header h3 { margin-left: 5%; }
@@ -608,7 +610,7 @@ a.email:hover { color: #333; }
 
 section#content article.home-post .post-thumb {
 	width: 100%;
-	height: 200px;
+	height: 100px;
 }
 section#content article.home-post .post-thumb img {
 	width: 100%;

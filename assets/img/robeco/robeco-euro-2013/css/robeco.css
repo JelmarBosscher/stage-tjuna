@@ -1,0 +1,286 @@
+
+html{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+body {position: relative; margin-top: 32px; font-family: verdana, sans-serif;}
+h2 {margin: 0;}
+p {
+	font-family: verdana, sans-serif;
+	font-size: 22px;
+	width: 590px;
+	margin: 0 auto;
+	text-align: center;
+	color: #05A3B9;
+}
+p.dark { color : #111}
+p.big {font-size: 28px;}
+p.medium {font-size: 24px;}
+p.small {font-size: 20px;}
+p.xsmall {font-size: 18px;}
+.highlight {color: #05a3b9;}
+	
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 652px;
+		height: 32px;
+		background: #eaf6f9 url('../img/robecoHeader.png') no-repeat;
+		z-index: 1;
+	}
+
+		header .robecoHeader {height: 0;}
+		
+		iframe{
+			border: 1px solid #ccc;
+		}
+			
+	.container {
+		position: relative;
+		margin-top: 32px;
+		width: 650px;
+		height: 600px;
+	}
+	
+		section {
+			position: fixed;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+		
+		.sectionOne {top: 0; }
+			.flipCoin {
+				position: absolute;
+				left: 222px;
+				top: 80px;
+				width: 200px;
+				height: 350px;
+				background: transparent url('../img/flipCoin.png') no-repeat 0 0; 
+			} 
+			.sectionOne .coin {
+				width: 400px;
+				margin-top: 180px;
+				margin-bottom: 500px;
+			}.sectionOne .coin span.highlight {
+				color: #fff;
+				letter-spacing: -2px;
+			}
+			
+			.flipHand, .fourHand {
+				position: absolute;
+				left: 60px;
+				top: 100px;
+				width: 500px;
+				height: 450px;
+			}	.flipHand {
+				background: transparent url('../img/handFlipCoin.png') no-repeat 0 0;
+			}	.fourHand {
+				background: transparent url('../img/handFingers.png') no-repeat 0 0; 
+			}	.scrollArrow {
+				position: absolute;
+				left: 250px;
+				top: 700px;
+				width: 200px;
+				height: 200px;
+				background: transparent url('../img/scrollArrow.png') no-repeat 0 0; 
+			}
+		
+			.sectionOne .content {position: relative; margin-top: 10px;}
+		
+				
+		.sectionTwo {top: 100%;}
+			.sectionTwo .content {position: relative; margin-top: 0px;}
+			.sectionTwo .content p.big{
+				top: 360px;
+				left: 80px;
+				width: 490px;
+				position: absolute;
+				font-size: 22px;
+				z-index: 2;
+			}
+			.sectionTwo .europeSpain {
+				width: 500px;
+				height: 500px;
+				background: transparent url('../img/europeSpain.png') no-repeat 0 0; 
+				position: absolute;
+				top: 70px;
+				left: 50px;
+				z-index: 0;
+			}
+			.sectionTwo .arrowSpain {
+				width: 100px;
+				height: 150px;
+				background: transparent url('../img/spainArrow.png') no-repeat 0 0; 
+				position: absolute;
+				left: 245px;
+				z-index: 1;
+			}
+			
+		.sectionThree {top: 200%;}
+		.sectionThree .content{
+			margin-top: 10px;
+		}
+			.sectionThree .italyBox {
+				position: absolute;
+				height: 200px;
+				width: 150px;
+				background: transparent url('../img/voteBoxItaly.png') no-repeat 0 0;
+				z-index: 1;
+				top: 30px;
+				left: 20px;
+			}
+			.sectionThree .Mario, .sectionThree .Silvio {
+				background: #fff;
+				position: absolute;
+				width: 650px;
+				top: 100px;
+				z-index: 0;
+			}
+			.sectionThree .Mario .content p, .sectionThree .Silvio .content p{
+				position: relative;
+				margin: 0 auto;
+				width: 560px;
+			}
+			.sectionThree .manMario {
+				position: relative;
+				margin: 0 auto;
+				height: 300px;
+				width: 250px;
+				background: #fff url('../img/manMario.png') no-repeat 0 0;
+			}
+			.sectionThree .manSilvio {
+				position: relative;
+				margin: 0 auto;
+				height: 300px;
+				width: 250px;
+				background: #fff url('../img/manSilvio.png') no-repeat 0 0;
+			}
+			
+		.sectionFour {top: 300%;}
+		.sectionFour .germanyBox {
+			position: absolute;
+			height: 200px;
+			width: 150px;
+			background: transparent url('../img/voteBoxGermany.png') no-repeat 0 0;
+			z-index: 1;
+			top: 30px;
+			left: 70px;
+		}
+		.sectionFour .p-over{
+			margin-top: -90px;
+		}
+			.sectionFour .europeFlag{
+				margin-top: 150px;	
+				position: relative;
+				margin: auto;
+				background: #fff url('../img/europeFlag.png') no-repeat 0 bottom;
+				width: 300px;
+				height: 280px;
+			}
+		.sectionFour .content p{
+			width: 500px;
+			padding: 15px 0;
+		}
+					
+		
+			
+		.sectionFive {top: 400%;}
+			.sectionFive .trojka{	
+					position: relative;
+					margin: auto;
+					background: #fff url('../img/trojka.png') no-repeat 0 bottom;
+					width: 300px;
+					height: 320px;
+				}
+			.sectionFive .content p{
+				width: 500px;
+				padding: 15px 0;
+			}
+			
+			
+		.sectionSix {top: 500%;}
+		
+		.sectionSix .handEuro{
+			position: relative;
+			margin: auto;
+			background: #fff url('../img/handEuro.png') no-repeat 0 0;
+			width: 575px;
+			height: 250px;			
+		}
+		.robecoLogo{
+			width: 200px;
+			height: 57px;
+			margin: 0 auto;
+			background: transparent url('../img/robecoLogo.jpg') no-repeat 0 0;
+		}
+		.footer{
+			height: 50px;
+			width: 100%;
+			background: #f5f4f1;
+			font-size: 14px;
+			position: absolute;
+			bottom: -120px;
+		}
+			.robecoFooterLogo{
+				position: absolute;
+				width: 174px;
+				height: 34px;
+				background: transparent url('../img/robecoFooterLogo.png') no-repeat 0 0;
+				left: 10px;
+				top: 6px;
+			}
+			.download{
+				position: absolute;
+				top: 11px;
+				left: 267px;
+			}
+				.download a{
+					text-decoration: none;
+					color: #05a3b9;
+				}
+					.download a:hover{
+						text-decoration: underline;
+					}
+				
+			.editieNummer{
+				position: absolute;
+				top: 11px;
+				right: 20px;
+				color: #05a3b9;
+			}	
+		.shadow{
+			width: 648px;
+			height: 40px;
+			background: transparent url('../img/shadowModelImage.png') no-repeat 0 0;
+			position: relative;
+			z-index: 3;
+			top: -26px;
+		}
+				
+	.content.subject {
+		background: #00a2b8;
+		padding: 10px 0;
+		color: #fff;
+		margin-top: 0;
+	}
+		.content.subject p{
+			color: #fff;
+			font-size: 20px;
+			padding: 0;
+		}
+		.content.subject .yearTime {
+			font-weight: bold;
+			color: #ffe1aa;
+		} 
+		.content.subject div.subjectNr {
+			position: absolute;
+			width: 50px;
+			top: 10px;
+			line-height: 60px;
+			left: 25px;
+			font-weight: bold;
+			font-size: 42px;
+		}
+	
