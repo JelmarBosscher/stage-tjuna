@@ -27,7 +27,10 @@ h1 { font-size: 1.8em;
 }
 h2 { 
 	font-size: 1.3em; 
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
 	margin-top: 20px;
+	font-weight: 500;
 }
 a h2 { color: #333; }
 a { 
@@ -64,13 +67,24 @@ blockquote {
 	text-align: center;
 	font-family: 'Titillium Web', sans-serif;
 }
+article.post p {
+	color: #777;
+}
 article.post p a{
 	font-weight: 400;
-	color: #333 !important;
+	color: #E64F1A !important;
 	background: #fff;
+	padding: 0 3px;
+	margin: 0 -2px;
+	display: inline-block;
 }
+
+article.post img{
+
+}
+
 .section-post{
-	-webkit-filter:grayscale(1) ;
+
 	-webkit-transition: all .45s linear;
 	-moz-transition: all .45s linear;
 	-o-transition: all .45s linear;
@@ -79,13 +93,15 @@ article.post p a{
 	
 }
 .section-post:hover{
-	-webkit-filter:grayscale(0);
+
 }
 article.post:hover p a{
 	border-bottom: 1px solid #e64f1a;
 }
 article.post:hover p a:hover{
-	background: #fff9f4;
+	background:#E84E1A;
+	border-bottom-color: #fff;
+	color: #fff !important;
 	
 }
 article.post ul, article.post ol {
@@ -257,21 +273,25 @@ section#content {
 	border-left: 1px solid #ececec;
 	min-height: 900px;
 	z-index: 99999;
+	border-left: 3px double #F0F0F0;
 	background-color: rgb(250, 249, 244);
+		box-shadow: 1px 1px 35px rgba(97, 97, 97, 0.1);
 }
 article.post {
 	max-width: 800px;
 	display: block;
 	position: relative;
 	padding: 40px ;
-	border-bottom: 1px solid #ececec;
 	min-height: 130px;
 	overflow-x: hidden;
 }
 article.post:hover{
-	background: #fafaf5;
-}
 
+}
+article.post .postDescription p{
+	font-weight: 400;
+	color: #333;
+}
 article figure img, article iframe, article object {
 	display: block;
 	margin: 0;
@@ -294,10 +314,11 @@ section#content.article-home > a {
 	display: block;
 	text-decoration: none;
 	border: 0;
-		-webkit-filter: grayscale(1);
+	border-bottom: 1px solid #ECECEC;
+
 }
 section#content.article-home > a:hover{
-	-webkit-filter: grayscale(0);
+
 	background: #fefefe;
 }	section#content.article-home > a span.showInd{
 	display: none;
@@ -313,11 +334,12 @@ section#content.article-home > a:hover{
 	color: #fff;
 	position: absolute;
 	top: 0;
+	left: 0;
 	text-align: center;
 	font-size: 16px;
 	width: 100%;
 	line-height: 0;
-	height: 100%ƒ;
+	height: 100%;
 }
 
 section#content article > a { text-decoration: none; }
@@ -334,6 +356,7 @@ section#content	article.home-post img {
 	}
 
 section#content article.home-post .post-thumb{
+	border: 3px double #ddd;
 	position: relative;
 	width: 200px;
 	overflow: hidden;
@@ -351,12 +374,14 @@ section#content article.home-post .post-thumb img {
 	height: 200px;
 	width: auto;
 }
-
+section#content.section-post .post img {
+	margin-bottom: 10px;
+}
 section#content.section-post div.image{
 	margin-bottom: 20px;
 }
 section#content.section-post div.image, section#content.section-post .post-cover{
-
+	border-bottom: 3px double #DDD;
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -527,6 +552,7 @@ a.email:hover { color: #333; }
 		border-top: 1px solid #ECECEC;
 		margin-left: 0;
 		min-height: 320px;
+	
 	}
 	article.post {
 		width: 90%;
@@ -534,7 +560,7 @@ a.email:hover { color: #333; }
 		margin: 0 auto;
 		padding: 40px 0;
 	}
-	
+
 	article.post p, article.post h2 {
 		width: 100%;
 		max-width: 100%;
@@ -601,8 +627,7 @@ a.email:hover { color: #333; }
 		font-size: 19px;
 		line-height: 32px;
 	}
-	h1 { font-size: 2.2em;
-	}
+	h1 { font-size: 2.2em;	}
 	h2 { font-size: 1.5em; margin-top: 20px; }
 	header#main-header hgroup h2 { font-size: 16px; }
 	div#tweets { max-width: 90%; font-style: italic; }

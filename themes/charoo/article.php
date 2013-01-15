@@ -20,7 +20,9 @@
 		</header>
 		
 		
+		<div class="postDescription">
 		<?php echo article_description(); ?>
+		</div>
 
 		<?php echo article_html(); ?>
 		
