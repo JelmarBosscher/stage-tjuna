@@ -69,6 +69,18 @@ article.post p a{
 	color: #333 !important;
 	background: #fff;
 }
+.section-post{
+	-webkit-filter:grayscale(1) ;
+	-webkit-transition: all .45s linear;
+	-moz-transition: all .45s linear;
+	-o-transition: all .45s linear;
+	-ms-transition: all .45s linear;
+	transition: all .45s linear;
+	
+}
+.section-post:hover{
+	-webkit-filter:grayscale(0);
+}
 article.post:hover p a{
 	border-bottom: 1px solid #e64f1a;
 }
@@ -248,7 +260,7 @@ section#content {
 	background-color: rgb(250, 249, 244);
 }
 article.post {
-	width: auto;
+	max-width: 800px;
 	display: block;
 	position: relative;
 	padding: 40px ;
@@ -282,16 +294,17 @@ section#content.article-home > a {
 	display: block;
 	text-decoration: none;
 	border: 0;
-	
+		-webkit-filter: grayscale(1);
 }
 section#content.article-home > a:hover{
+	-webkit-filter: grayscale(0);
 	background: #fefefe;
 }	section#content.article-home > a span.showInd{
 	display: none;
 	background-position: top center;
 	-webkit-transition: .3s linear;
 	-moz-transition:  .3s linear;
-	-o-transition: .3s linear;
+	-o-transition: .3ƒs linear;
 	-ms-transition:  .3s linear;
 	transition:  .3s linear;
 }	section#content.article-home > a:hover span.showInd{
@@ -304,12 +317,12 @@ section#content.article-home > a:hover{
 	font-size: 16px;
 	width: 100%;
 	line-height: 0;
-	height: 100%;
+	height: 100%ƒ;
 }
 
 section#content article > a { text-decoration: none; }
 section#content article > img { width: 100%; max-width: 800px; display: block;}
-article.post h1, article.post h2, article.post p { max-width: 800px; word-break: break-all; word-wrap: break-word;
+article.post h1, article.post h2, article.post p { max-width: 800px; word-wrap: break-word;
 }
 article.post ul, article.post ol  { max-width: 480px; }
 
@@ -338,11 +351,12 @@ section#content article.home-post .post-thumb img {
 	height: 200px;
 	width: auto;
 }
+
 section#content.section-post div.image{
 	margin-bottom: 20px;
 }
 section#content.section-post div.image, section#content.section-post .post-cover{
-	height: 250px;
+
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -365,7 +379,7 @@ section#content.section-post div.image:hover span.greyOut, section#content.secti
 	}
 
 section#content.section-post div.image.activeShow, section#content.section-post .post-cover.activeShow{
-	height: 250px;
+	
 	box-shadow: 0px 1px 15px #000;
 	z-index: 6666;
 	overflow: visible;
@@ -387,11 +401,11 @@ section#content.section-post div.image.activeShow, section#content.section-post 
 	width: 100%;
 	height: 100%;
 	background-position: top center;
-	-webkit-transition: background-position .3s ease;
-	-moz-transition: background-position .3s ease;
-	-o-transition: background-position .3s ease;
-	-ms-transition: background-position .3s ease;
-	transition: background-position .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
 }	section#content.section-post div.image.activeShow span.greyOut, section#content.section-post .post-cover.activeShow span.greyOut{
 	display: block;
 	position: fixed;
@@ -552,12 +566,12 @@ a.email:hover { color: #333; }
 		width: auto;
 	}
 	section#content.section-post div.image.activeShow, section#content.section-post .post-cover.activeShow{
-		height: 150px;
+		height: auto;
 	}
 	section#content.section-post .post-cover, section#content.section-post div.image{
 		width: 100%;
 		max-width: auto;
-		height: 150px;
+		height: auto;
 	}
 	
 	footer {

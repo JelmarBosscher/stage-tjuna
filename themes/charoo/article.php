@@ -21,6 +21,7 @@
 		
 		
 		<?php echo article_description(); ?>
+
 		<?php echo article_html(); ?>
 		
 		
