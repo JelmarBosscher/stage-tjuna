@@ -14,6 +14,27 @@
 	font-style: normal;
 }
 
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
 h1, h2 {
 	font-weight: 700;
 	line-height: 1.2em;
@@ -68,7 +89,7 @@ blockquote {
 	font-family: 'Titillium Web', sans-serif;
 }
 article.post p {
-	color: #777;
+	color: #555;
 }
 article.post p a{
 	font-weight: 400;
@@ -107,6 +128,15 @@ article.post:hover p a:hover{
 article.post ul, article.post ol {
 	margin-left: 20px;
 	padding-left: 15px;
+	color: #666;
+	font-weight: 300;
+
+	line-height: 24px;
+
+}
+article.post ul li, article.post ol li{
+	margin: 0 0 10px;
+	
 }
 article.post ul { list-style: disc; }
 article.post ol { list-style: upper-roman; }
@@ -285,6 +315,14 @@ article.post {
 	min-height: 130px;
 	overflow-x: hidden;
 }
+article.post .projectLink{
+	width: 100%;
+	display: block;
+	font-size: 42px;
+	padding:15px 0 20px;
+	text-align: center;
+	margin: 10px 0;
+}
 article.post:hover{
 
 }
@@ -343,10 +381,10 @@ section#content.article-home > a:hover{
 }
 
 section#content article > a { text-decoration: none; }
-section#content article > img { width: 100%; max-width: 800px; display: block;}
+.section-post article.post img { max-width: 100%; display: block;}
 article.post h1, article.post h2, article.post p { max-width: 800px; word-wrap: break-word;
 }
-article.post ul, article.post ol  { max-width: 480px; }
+article.post ul, article.post ol  { max-width: 780px; }
 
 section#content article.home-post {
 	position: relative;
@@ -634,6 +672,7 @@ a.email:hover { color: #333; }
 	article figure img, article iframe, article object { width: 900px; }
 	article.post h1, article.post h2, article.post p { max-width: 780px; }
 	article.post ul, article.post ol { max-width: 680px; }
+
 	blockquote {
 
 	}
