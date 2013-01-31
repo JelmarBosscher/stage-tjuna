@@ -58,11 +58,11 @@ a {
 	color: #333;
 	border-bottom: 1px solid #efebe2;
 	text-decoration: none;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear;
-	-o-transition: all .3s linear;
-	-ms-transition: all .3s linear;
-	transition: all .3s linear;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	-ms-transition: all .1s linear;
+	transition: all .1s linear;
 }
 a:hover {
 	
@@ -86,7 +86,7 @@ blockquote {
 	background:;
 	border-left: 3px double #ECECEC;
 	text-align: center;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: helvetica, sans-serif;
 }
 article.post p {
 	color: #555;
@@ -145,7 +145,8 @@ article.post ol { list-style: upper-roman; }
 body {
 	background-color: #faf9f4;
 	font-size: 16px/24px;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: helvetica, sans-serif;
+	font-weight: 100;
 	color: #212121;
 	min-width: 895px;
 	margin: 0;
@@ -388,6 +389,37 @@ article.post ul, article.post ol  { max-width: 780px; }
 
 section#content article.home-post {
 	position: relative;
+}
+section#content .prevNext {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+section#content .prevNext a{
+
+	float: left;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	background: tomato;
+
+	color: white;
+	padding: 0px 16px;
+	background: #EEE;
+	border-top: 20px solid #E84E1A;
+	border-bottom: 20px solid #DE4E1A;
+	border-left: none;
+	border-right: 20px solid #FAF9F4;
+	height: 0;
+	line-height: 0;
+}
+section#content .prevNext span.newer a	{
+	border-right: none;
+	border-left: 20px solid #FAF9F4;
+	float: right;
+}
+section#content .prevNext a:hover{
+	padding: 0 20px;
 }
 section#content	article.home-post img {
 		display: none;
@@ -661,7 +693,7 @@ a.email:hover { color: #333; }
 /* == LOS MONITORS GIGANTE == */
 @media all and (min-width: 1441px) {
 	p, ul, ol { 
-		font-family: 'Titillium Web', sans-serif;
+		font-family: helvetica, sans-serif;
 		font-size: 19px;
 		line-height: 32px;
 	}

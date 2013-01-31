@@ -1,4 +1,4 @@
-<footer>
+<footer class="clearfix">
 				<p>
 				
 				Powered by <a href="http://anchorcms.com" target="_blank">AnchorCMS</a>

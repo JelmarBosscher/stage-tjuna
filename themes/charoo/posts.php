@@ -24,7 +24,7 @@
 				</a>
 			<?php endwhile; ?>
 
-		<p><?php echo posts_prev(); ?> <?php echo posts_next(); ?></p>
+		<p class="prevNext"><span class="newer"><?php echo posts_next('Older projects'); ?></span><?php echo posts_prev('Newer projects'); ?> </p>
 
 	<?php else: ?>
 		<p>Looks like I have some writing to do!</p>
